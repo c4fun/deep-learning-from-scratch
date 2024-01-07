@@ -11,7 +11,7 @@ from common.optimizer import SGD
 
 (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True)
 
-# 過学習を再現するために、学習データを削減
+# 为了再现过拟合，减少学习数据
 x_train = x_train[:300]
 t_train = t_train[:300]
 
